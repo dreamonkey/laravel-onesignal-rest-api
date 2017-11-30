@@ -1,8 +1,8 @@
-#  OneSignal Push Notifications for Laravel 5
+#  OneSignal Push Notifications for Laravel 5 / Lumen
 
 ## Introduction
 
-This project is a Laravel 5.4 wrapper for the OneSignal v1 API.  It supports all operations currently supported by the API.
+This project is a Laravel 5 wrapper for the OneSignal v1 API.  It supports all operations currently supported by the API.
 
 ## Installation (Laravel and Lumen)
 
