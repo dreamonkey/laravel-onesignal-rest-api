@@ -2,14 +2,14 @@
 
 ## Introduction
 
-This project is a wrapper for the OneSignal v1 API.  It supports all operations currently supported by the API.
+This project is a Laravel 5.4 wrapper for the OneSignal v1 API.  It supports all operations currently supported by the API.
 
 ## Installation (Laravel and Lumen)
 
 Require the package with composer.
 
 ```sh
-composer require jmrieger/onesignal-laravel
+composer require dreamonkey/onesignal-laravel
 composer update
 ```
 
@@ -18,20 +18,20 @@ Update `config/app.php` by adding the following entries.
 ```php
 'providers' => [
 	// ...
-	jmrieger\OneSignal\OneSignalServiceProvider::class
+	Dreamonkey\OneSignal\OneSignalServiceProvider::class
 ];
 
 'aliases' => [
    	// ...
-   	'OneSignal' => jmrieger\OneSignal\OneSignalFacade::class
+   	'OneSignal' => Dreamonkey\OneSignal\OneSignalFacade::class
    ];
 ```
 
 ## Lumen Users:
 update `bootstrap/app.php`, adding the following entry
 ```php
-$app->register( \jmrieger\OneSignal\OneSignalServiceProvider::class );
-class_alias( 'jmrieger\OneSignal\OneSignalFacade', 'OneSignal' );
+$app->register( \Dreamonkey\OneSignal\OneSignalServiceProvider::class );
+class_alias( 'Dreamonkey\OneSignal\OneSignalFacade', 'OneSignal' );
 ```
 
 
@@ -109,4 +109,4 @@ https://documentation.onesignal.com/docs/server-api-overview
 
 
 ## Acknowledgements
-This project was inspired by, and evolved from, https://github.com/berkayk/laravel-onesignal
+This project has been forked and evolved by Dreamonkey from https://github.com/jmrieger/onesignal-laravel
