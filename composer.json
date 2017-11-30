@@ -14,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "dreamonkey\\OneSignal\\": "src/"
+      "Dreamonkey\\OneSignal\\": "src/"
     }
   },
   "license": "MIT",
