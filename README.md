@@ -1,4 +1,4 @@
-#  OneSignal Push Notifications for Laravel 5 / Lumen
+#  OneSignal REST API Wrapper For Laravel/Lumen
 
 ## Introduction
 
