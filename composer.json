@@ -1,7 +1,7 @@
 {
-  "name": "dreamonkey/onesignal-laravel",
-  "description": "OneSignal Push Wrapper For Laravel/Lumen",
-  "keywords": ["onesignal", "webpush", "push", "laravel", "laravel 5","lumen"],
+  "name": "dreamonkey/laravel-onesignal-rest-api",
+  "description": "OneSignal REST API Wrapper For Laravel/Lumen",
+  "keywords": ["onesignal", "webpush", "push", "laravel", "laravel 5", "lumen", "rest"],
   "type": "library",
   "require": {
     "php": ">=5.5",
