@@ -788,8 +788,3 @@ class OneSignalClient
         return $response;
     }
 }
-
-class OneSignalException extends Exception
-{
-
-}
