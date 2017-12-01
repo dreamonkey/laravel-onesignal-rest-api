@@ -23,11 +23,7 @@ class OneSignalServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        /** @noinspection PhpUndefinedFieldInspection */
         $this->app->singleton('onesignal', function ($app)
-            /** @noinspection PhpUndefinedFunctionInspection */
-            /** @noinspection PhpUndefinedFunctionInspection */
-            /** @noinspection PhpUndefinedFunctionInspection */
             $config = [
                 "app_id"        => $app['config']['onesignal']['onesignal_app_id'],
                 "rest_api_key"  => $app['config']['onesignal']['onesignal_rest_api_key'],
