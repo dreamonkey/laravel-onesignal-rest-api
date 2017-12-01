@@ -23,7 +23,7 @@ Update `config/app.php` by adding the following entries.
 
 'aliases' => [
    	// ...
-   	'OneSignal' => Dreamonkey\OneSignal\OneSignalFacade::class,
+   	'OneSignal' => Dreamonkey\OneSignal\Facades\OneSignal::class,
    ];
 ```
 

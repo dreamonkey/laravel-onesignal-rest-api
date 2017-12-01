@@ -1,10 +1,10 @@
 <?php
 
-namespace Dreamonkey\OneSignal;
+namespace Dreamonkey\OneSignal\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class OneSignalFacade extends Facade
+class OneSignal extends Facade
 {
 
     protected static function getFacadeAccessor()
