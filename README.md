@@ -11,7 +11,6 @@ Require the package with composer.
 
 ```sh
 composer require dreamonkey/laravel-onesignal-rest-api
-composer update
 ```
 
 ## Laravel Users:
@@ -19,12 +18,12 @@ Update `config/app.php` by adding the following entries.
 ```php
 'providers' => [
 	// ...
-	Dreamonkey\OneSignal\OneSignalServiceProvider::class
+	Dreamonkey\OneSignal\OneSignalServiceProvider::class,
 ];
 
 'aliases' => [
    	// ...
-   	'OneSignal' => Dreamonkey\OneSignal\OneSignalFacade::class
+   	'OneSignal' => Dreamonkey\OneSignal\OneSignalFacade::class,
    ];
 ```
 
