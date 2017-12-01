@@ -1,6 +1,6 @@
 <?php
 
-namespace jmrieger\OneSignal;
+namespace Dreamonkey\OneSignal;
 
 use GuzzleHttp\Client;
 use Exception;
@@ -211,7 +211,7 @@ class OneSignalClient
             "adm_group_message"          => false,
             "ttl"                        => false,
             "priority"                   => false,
-
+	    "mutable_content"            => false,
         ];
 
 	// Void requirement of 'contents' if 'template_id' is set
