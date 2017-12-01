@@ -25,12 +25,12 @@ class OneSignalServiceProvider extends ServiceProvider
     {
         $this->app->singleton('onesignal', function ($app) {
             $config = [
-                "app_id"        => $app['config']['onesignal']['onesignal_app_id'],
-                "rest_api_key"  => $app['config']['onesignal']['onesignal_rest_api_key'],
+                "app_id" => $app['config']['onesignal']['onesignal_app_id'],
+                "rest_api_key" => $app['config']['onesignal']['onesignal_rest_api_key'],
                 "user_auth_key" => $app['config']['onesignal']['onesignal_user_auth_key'],
             ];
 
-            $client = new OneSignalClient($config[ 'app_id' ], $config[ 'rest_api_key' ], $config[ 'user_auth_key' ]);
+            $client = new OneSignalClient($config['app_id'], $config['rest_api_key'], $config['user_auth_key']);
 
             return $client;
         });

@@ -50,6 +50,15 @@ ONESIGNAL_USER_AUTH_KEY=
 ## Usage
 
 There is a function for each of the OneSignal API calls.  They are broken down here.
+All methods will return an array formatted like this:
+```
+    [
+        'status' => < HTTP status code of the request >,
+        'data' => [
+            < data returned by OneSignal REST API in array format >
+        ],
+    ]
+```
 
 **Note:** In all instances where an $app_id is asked for, omitting it will grab the default OneSignal App ID specified in the .env file
 
