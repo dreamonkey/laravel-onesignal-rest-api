@@ -10,7 +10,7 @@ It supports all operations currently supported by the API.
 Require the package with composer.
 
 ```sh
-composer require dreamonkey/onesignal-laravel
+composer require dreamonkey/laravel-onesignal-rest-api
 composer update
 ```
 
