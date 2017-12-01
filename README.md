@@ -36,7 +36,9 @@ class_alias( 'Dreamonkey\OneSignal\OneSignalFacade', 'OneSignal' );
 
 
 ## Configuration
-There are 3 settings that need to be updated: your default OneSignal app ID, the REST API key, and the User Auth Key.  All of these items can be found in your Control Panel on the OneSignal site.
+There are three values that need to be set in order to use the library: your default OneSignal app ID, the REST API key and your account User Auth Key.
+All of these items can be found in your Control Panel on the OneSignal site.
+First two are app-related and can be found inside your app settings in the "Keys & IDs" tab (upper left corner), the third is account-related and can be found pressing your account avatar (lower right corner) and selecting "Account & API Keys".
 
 Place the 3 keys into your .env file, as such:
 ```
