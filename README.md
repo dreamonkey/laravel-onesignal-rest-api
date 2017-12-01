@@ -1,15 +1,15 @@
-#  OneSignal Push Notifications for Laravel 5
+#  OneSignal Push Notifications for Laravel 5 / Lumen
 
 ## Introduction
 
-This project is a wrapper for the OneSignal v1 API.  It supports all operations currently supported by the API.
+This project is a Laravel 5 wrapper for the OneSignal v1 API.  It supports all operations currently supported by the API.
 
 ## Installation (Laravel and Lumen)
 
 Require the package with composer.
 
 ```sh
-composer require jmrieger/onesignal-laravel
+composer require dreamonkey/onesignal-laravel
 composer update
 ```
 
@@ -18,25 +18,27 @@ Update `config/app.php` by adding the following entries.
 ```php
 'providers' => [
 	// ...
-	jmrieger\OneSignal\OneSignalServiceProvider::class
+	Dreamonkey\OneSignal\OneSignalServiceProvider::class
 ];
 
 'aliases' => [
    	// ...
-   	'OneSignal' => jmrieger\OneSignal\OneSignalFacade::class
+   	'OneSignal' => Dreamonkey\OneSignal\OneSignalFacade::class
    ];
 ```
 
 ## Lumen Users:
 update `bootstrap/app.php`, adding the following entry
 ```php
-$app->register( \jmrieger\OneSignal\OneSignalServiceProvider::class );
-class_alias( 'jmrieger\OneSignal\OneSignalFacade', 'OneSignal' );
+$app->register( \Dreamonkey\OneSignal\OneSignalServiceProvider::class );
+class_alias( 'Dreamonkey\OneSignal\OneSignalFacade', 'OneSignal' );
 ```
 
 
 ## Configuration
-There are 3 settings that need to be updated: your default OneSignal app ID, the REST API key, and the User Auth Key.  All of these items can be found in your Control Panel on the OneSignal site.
+There are three values that need to be set in order to use the library: your default OneSignal app ID, the REST API key and your account User Auth Key.
+All of these items can be found in your Control Panel on the OneSignal site.
+First two are app-related and can be found inside your app settings in the "Keys & IDs" tab (upper left corner), the third is account-related and can be found pressing your account avatar (lower right corner) and selecting "Account & API Keys".
 
 Place the 3 keys into your .env file, as such:
 ```
@@ -109,4 +111,4 @@ https://documentation.onesignal.com/docs/server-api-overview
 
 
 ## Acknowledgements
-This project was inspired by, and evolved from, https://github.com/berkayk/laravel-onesignal
+This project has been forked and evolved by Dreamonkey from https://github.com/jmrieger/onesignal-laravel

@@ -1,28 +1,28 @@
 {
-  "name": "jmrieger/onesignal-laravel",
-  "description": "OneSignal Push Wrapper For Illuminate",
+  "name": "dreamonkey/onesignal-laravel",
+  "description": "OneSignal Push Wrapper For Laravel/Lumen",
   "keywords": ["onesignal", "webpush", "push", "laravel", "laravel 5","lumen"],
   "type": "library",
   "require": {
     "php": ">=5.5",
     "guzzlehttp/guzzle": "^6.2",
     "illuminate/support": "4.*|5.*",
-    "symfony/psr-http-message-bridge": "^0.2.0"
+    "symfony/psr-http-message-bridge": "^1.0.0"
   },
   "require-dev": {
     "vlucas/phpdotenv": "^2.2"
   },
   "autoload": {
     "psr-4": {
-      "jmrieger\\OneSignal\\": "src/"
+      "Dreamonkey\\OneSignal\\": "src/"
     }
   },
   "license": "MIT",
   "authors": [
     {
-      "name": "Joseph Rieger",
-      "email": "jmrieger@mtu.edu",
-      "homepage": "http://joerieger.com"
+      "name": "Paolo Caleffi",
+      "email": "p.caleffi@dreamonkey.com",
+      "homepage": "https://dreamonkey.com"
     }
   ],
   "minimum-stability": "dev",

@@ -1,6 +1,6 @@
 <?php
 
-namespace jmrieger\OneSignal;
+namespace Dreamonkey\OneSignal;
 
 use Illuminate\Support\Facades\Facade;
 

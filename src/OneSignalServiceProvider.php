@@ -1,6 +1,6 @@
 <?php
 
-namespace jmrieger\OneSignal;
+namespace Dreamonkey\OneSignal;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -23,15 +23,11 @@ class OneSignalServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        /** @noinspection PhpUndefinedFieldInspection */
-        $this->app->singleton('onesignal', function () {
-            /** @noinspection PhpUndefinedFunctionInspection */
-            /** @noinspection PhpUndefinedFunctionInspection */
-            /** @noinspection PhpUndefinedFunctionInspection */
+        $this->app->singleton('onesignal', function ($app)
             $config = [
-                "app_id"        => (env("ONESIGNAL_APP_ID") ?: ""),
-                "rest_api_key"  => (env("ONESIGNAL_REST_API_KEY") ?: ""),
-                "user_auth_key" => (env("ONESIGNAL_USER_AUTH_KEY") ?: ""),
+                "app_id"        => $app['config']['onesignal']['onesignal_app_id'],
+                "rest_api_key"  => $app['config']['onesignal']['onesignal_rest_api_key'],
+                "user_auth_key" => $app['config']['onesignal']['onesignal_user_auth_key'],
             ];
 
             $client = new OneSignalClient($config[ 'app_id' ], $config[ 'rest_api_key' ], $config[ 'user_auth_key' ]);
