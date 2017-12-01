@@ -4,7 +4,7 @@ namespace Dreamonkey\OneSignal;
 
 use Illuminate\Support\Facades\Facade;
 
-class OneSignal extends Facade
+class OneSignalFacade extends Facade
 {
 
     protected static function getFacadeAccessor()
