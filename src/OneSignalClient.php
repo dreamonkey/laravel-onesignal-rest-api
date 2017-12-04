@@ -740,7 +740,7 @@ class OneSignalClient
     {
         return [
             'status' => $response->getStatusCode(),
-            'data' => json_decode($response->getBody()->getContents()),
+            'data' => json_decode($response->getBody()->getContents(), true),
         ];
     }
 
