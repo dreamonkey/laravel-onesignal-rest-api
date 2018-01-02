@@ -17,6 +17,16 @@
       "Dreamonkey\\OneSignal\\": "src/"
     }
   },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Dreamonkey\\OneSignal\\OneSignalServiceProvider"
+      ],
+      "aliases": {
+        "OneSignal": "Dreamonkey\\OneSignal\\Facades\\OneSignal"
+      }
+    }
+  },
   "license": "MIT",
   "authors": [
     {

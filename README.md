@@ -14,21 +14,25 @@ composer require dreamonkey/laravel-onesignal-rest-api
 ```
 
 ## Laravel Users:
+From Laravel 5.5 onwards, it's possible to take advantage of auto-discovery of the service provider.
+
+For Laravel versions before 5.5, you must register the service provider in your config/app.php
+
 Update `config/app.php` by adding the following entries.
 ```php
 'providers' => [
-	// ...
-	Dreamonkey\OneSignal\OneSignalServiceProvider::class,
+    // ...
+    Dreamonkey\OneSignal\OneSignalServiceProvider::class,
 ];
 
 'aliases' => [
    	// ...
    	'OneSignal' => Dreamonkey\OneSignal\Facades\OneSignal::class,
-   ];
+];
 ```
 
 ## Lumen Users:
-update `bootstrap/app.php`, adding the following entry
+Update `bootstrap/app.php`, adding the following entry
 ```php
 $app->register( \Dreamonkey\OneSignal\OneSignalServiceProvider::class );
 class_alias( 'Dreamonkey\OneSignal\OneSignalFacade', 'OneSignal' );
