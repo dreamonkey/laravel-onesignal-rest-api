@@ -173,7 +173,6 @@ class OneSignalClient
             "big_picture" => false,
             "buttons" => false,
             "chrome_big_picture" => false,
-            "chrome_big_picture" => false,
             "chrome_icon" => false,
             "chrome_web_icon" => false,
             "chrome_web_image" => false,
