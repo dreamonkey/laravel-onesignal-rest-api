@@ -1,12 +1,19 @@
 {
   "name": "dreamonkey/laravel-onesignal-rest-api",
   "description": "OneSignal REST API Wrapper For Laravel/Lumen",
-  "keywords": ["onesignal", "webpush", "push", "laravel", "laravel 5", "lumen", "rest"],
+  "keywords": [
+    "onesignal",
+    "webpush",
+    "push",
+    "laravel",
+    "lumen",
+    "rest"
+  ],
   "type": "library",
   "require": {
-    "php": ">=5.5",
+    "php": ">=7.2",
     "guzzlehttp/guzzle": "^6.2",
-    "illuminate/support": "4.*|5.*",
+    "illuminate/support": "6.*|7.*",
     "symfony/psr-http-message-bridge": "^1.0.0"
   },
   "require-dev": {
