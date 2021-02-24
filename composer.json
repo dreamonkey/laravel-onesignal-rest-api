@@ -12,9 +12,9 @@
   "type": "library",
   "require": {
     "php": ">=7.2",
-    "guzzlehttp/guzzle": "^6.2",
-    "illuminate/support": "6.*|7.*",
-    "symfony/psr-http-message-bridge": "^1.0.0"
+    "guzzlehttp/guzzle": "^6.2|^7.0.1",
+    "illuminate/support": "^6.0|^7.0|^8.0",
+    "symfony/psr-http-message-bridge": "^1.0|^2.0"
   },
   "require-dev": {
     "vlucas/phpdotenv": "^2.2"
