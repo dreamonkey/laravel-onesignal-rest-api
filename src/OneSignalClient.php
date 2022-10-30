@@ -194,7 +194,7 @@ class OneSignalClient
             "include_wp_uris" => false,
             "include_wp_wns_uris" => false,
             "included_segments" => false,
-            "ios_attachtments" => false,
+            "ios_attachments" => false,
             "ios_badgeCount" => false,
             "ios_badgeType" => false,
             "ios_category" => false,
