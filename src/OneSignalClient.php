@@ -185,6 +185,7 @@ class OneSignalClient
             "filters" => false,
             "firefox_icon" => false,
             "headings" => false,
+            "huawei_big_picture" => false,
             "include_amazon_reg_ids" => false,
             "include_android_reg_ids" => false,
             "include_chrome_reg_ids" => false,
