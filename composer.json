@@ -1,47 +1,47 @@
 {
-  "name": "dreamonkey/laravel-onesignal-rest-api",
-  "description": "OneSignal REST API Wrapper For Laravel/Lumen",
-  "keywords": [
-    "onesignal",
-    "webpush",
-    "push",
-    "laravel",
-    "lumen",
-    "rest"
-  ],
-  "type": "library",
-  "require": {
-    "php": ">=7.2",
-    "guzzlehttp/guzzle": "^6.2|^7.0.1",
-    "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0",
-    "symfony/psr-http-message-bridge": "^1.0|^2.0"
-  },
-  "require-dev": {
-    "vlucas/phpdotenv": "^2.2|^5.5"
-  },
-  "autoload": {
-    "psr-4": {
-      "Dreamonkey\\OneSignal\\": "src/"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Dreamonkey\\OneSignal\\OneSignalServiceProvider"
-      ],
-      "aliases": {
-        "OneSignal": "Dreamonkey\\OneSignal\\Facades\\OneSignal"
-      }
-    }
-  },
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Paolo Caleffi",
-      "email": "p.caleffi@dreamonkey.com",
-      "homepage": "https://dreamonkey.com"
-    }
-  ],
-  "minimum-stability": "dev",
-  "prefer-stable": true
+    "name": "dreamonkey/laravel-onesignal-rest-api",
+    "description": "OneSignal REST API Wrapper For Laravel/Lumen",
+    "keywords": [
+        "onesignal",
+        "webpush",
+        "push",
+        "laravel",
+        "lumen",
+        "rest"
+    ],
+    "type": "library",
+    "require": {
+        "php": ">=7.2",
+        "guzzlehttp/guzzle": "^6.2|^7.0.1",
+        "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
+        "symfony/psr-http-message-bridge": "^1.0|^2.0|^7.0"
+    },
+    "require-dev": {
+        "vlucas/phpdotenv": "^2.2|^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dreamonkey\\OneSignal\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dreamonkey\\OneSignal\\OneSignalServiceProvider"
+            ],
+            "aliases": {
+                "OneSignal": "Dreamonkey\\OneSignal\\Facades\\OneSignal"
+            }
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paolo Caleffi",
+            "email": "p.caleffi@dreamonkey.com",
+            "homepage": "https://dreamonkey.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
