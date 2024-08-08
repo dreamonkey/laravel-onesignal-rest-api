@@ -1,3 +1,6 @@
+!!!! THIS PACKAGE IS UNMAINTAINED !!!!
+Feel free to fork and start maintaining a copy yourself, we can link here popular forks
+
 # OneSignal REST API Wrapper For Laravel/Lumen
 
 ## Introduction
